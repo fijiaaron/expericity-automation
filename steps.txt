@@ -1,3 +1,23 @@
+Register new account
+
+1. Go to sign up page
+2. Enter personal information
+3. Select Yuur Retailer
+4. Submit
+5. Verify completion
+6. Verify Account registration email is sent
+
+
+Attempt to register new account with email address that already exists
+
+1. Go to sign up page
+2. Enter personal information
+3. Expect message that email address is detected to have already registered
+
+
+
+
+
 
 
 
@@ -59,6 +79,13 @@ http://www.3point5.com/action/registration
 	CONFIRM
 	<input style="margin-bottom: 0px;" class="btn margin-top event-trigger btn-primary" type="submit" value="Confirm">
 
+
+
+
+ACCOUNT PENDING APPROVAL
+...
+SIGN UP
+Select a Language
 
 
 Confirmation email is sent
