@@ -1,0 +1,71 @@
+
+
+
+go to signup page
+	from home page it redirects to campaign landing page
+		http://www.3point5.com/campaign/hpbq1/
+
+		enter email address
+			<input name="email" title="Required Field" type="email" placeholder="Your email address">
+		click on [Join 3point5.com]
+			<button class="btn btn-primary" id="btn-primary" style="margin-top: 20px;" type="submit">Join 3point5.com</button>
+
+		SIGNUP (top bar)
+		<a href="/action/registration">Sign Up</a>
+
+		JOIN NOW (Become a member)
+		<a id="email-reg-button" class="btn left btn-primary" href="/action/registration">Join Now</a>
+		
+http://www.3point5.com/action/login?path=user%2Fhome
+
+on signup page
+	Enter Your Personal Information
+		<form id="userInfoForm" action="registration" method="post">
+			<input type="hidden" name="_flowExecutionKey" value="e11s1">
+			<input type="hidden" name="_eventId" value="retailLocation">
+			<input type="hidden" id="authKey" name="authKey">
+
+		Email, required  (should be prepopulated if entered on previous page)
+			<input name="email" value="aarone.test1@one-shore.com" id="email" type="text" maxlength="50" class="required email">
+
+		First Name, required
+			<input id="firstName" name="firstName" class="disable-on-identify disable-on-auth required" type="text" value="" maxlength="30">
+
+		Last Name, required
+			<input id="lastName" name="lastName" class="disable-on-identify disable-on-auth required" type="text" value="" maxlength="30">
+
+		Choose Member ID, required
+			<input name="userName" value="" id="userName" type="text" maxlength="50" class="disable-on-identify disable-on-auth required">
+
+		Create Password, required
+			<input id="password" name="password" class="disable-on-identify hide-on-identify hide-on-auth required" type="password" value="" size="11" maxlength="11">
+
+		Confirm Password, required
+			<input id="passwordConfirmation" name="passwordConfirmation" class="disable-on-identify hide-on-identify hide-on-auth required" type="password" value="" size="11" maxlength="11">
+
+SIGN UP
+	H1
+
+	Select Yuur Retailer
+		first one //ul[@id='result']/li[1]
+
+	<a name="locationNotFound" class="btn event-trigger new-location btn-small btn-primary-secondary">I can't find my location</a>
+
+
+
+http://www.3point5.com/action/registration
+
+
+	CONFIRM
+	<input style="margin-bottom: 0px;" class="btn margin-top event-trigger btn-primary" type="submit" value="Confirm">
+
+
+
+Confirmation email is sent
+
+
+
+---
+if email address has already registered:
+
+<label generated="true" for="email" class="help-inline">We have detected that aarone.test1@one-shore.com is already registered on 3point5.com, ProMotive.com or on a private pro site hosted by one of these services. <a href="login?email=aarone.test1@one-shore.com" class="user-authentication">Login</a> with this email account or <a href="lostPassword?email=aarone.test1@one-shore.com" class="existing-email-recover-password">recover</a> your password for this e-mail account.</label>
