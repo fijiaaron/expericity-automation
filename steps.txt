@@ -2,7 +2,7 @@ Register new account
 
 1. Go to sign up page
 2. Enter personal information
-3. Select Yuur Retailer
+3. Select Your Retailer (can we get past this step)
 4. Submit
 5. Verify completion
 6. Verify Account registration email is sent
@@ -66,12 +66,64 @@ on signup page
 SIGN UP
 	H1
 
-	Select Yuur Retailer
+	Select Your Retailer
 		first one //ul[@id='result']/li[1]
+			<li id="location_648075240" class="hover address selected"><img src="http://cdn.experticity.com/corp/v4.0.725/images/experticity-pin.png"><h2><a>Out N Back</a></h2><address>418 N State, DBA OUT N BACK<br>Orem, Utah</address><div class="member-count" style="display: block;">
+			<h2 class="member-count-number">67</h2><span class="member-count-name">Members</span>
+			</div></li>
 
+		This is my location
+		<div style="cursor: default; width: 227px; height: 118px; position: absolute; left: 216px; top: 133px; z-index: 133;"><div style="position: absolute; left: 0px; top: 0px;"><div style="width: 0px; height: 0px; border-right-width: 10px; border-right-style: solid; border-right-color: transparent; border-left-width: 10px; border-left-style: solid; border-left-color: transparent; border-top-width: 24px; border-top-style: solid; border-top-color: rgba(0, 0, 0, 0.0980392); position: absolute; left: 104px; top: 118px;"></div><div style="position: absolute; left: 0px; top: 0px; border-radius: 2px; -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; width: 227px; height: 118px; background-color: rgba(0, 0, 0, 0.2);"></div><div style="border-top-width: 24px; position: absolute; left: 104px; top: 115px;"><div style="position: absolute; overflow: hidden; left: -6px; top: -1px; width: 16px; height: 30px;"><div style="position: absolute; left: 6px; transform: skewX(22.6deg) translateZ(0px); transform-origin: 0px 0px 0px; height: 24px; width: 10px; box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 6px; background-color: rgb(255, 255, 255);"></div></div><div style="position: absolute; overflow: hidden; top: -1px; left: 10px; width: 16px; height: 30px;"><div style="position: absolute; left: 0px; transform: skewX(-22.6deg) translateZ(0px); transform-origin: 10px 0px 0px; height: 24px; width: 10px; box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 6px; background-color: rgb(255, 255, 255);"></div></div></div><div style="position: absolute; left: 1px; top: 1px; border-radius: 2px; width: 225px; height: 116px; background-color: rgb(255, 255, 255);"></div></div><div class="gm-style-iw" style="top: 9px; position: absolute; left: 15px; width: 197px; height: 100px;"><div style="overflow: auto; width: 174px; height: 100px;"><div class="" style="overflow: auto;"><div id="content"><h4>Out N Back</h4><div id="bodyContent"><div class="address disabled"><address>418 N State, DBA OUT N BACK<br>Orem, Utah</address></div><div class="contentbuttons">
+<input id="select_location" width="130" name="selectLocation" class="btn selectLocation btn-primary" type="submit" value="This is my location">
+</div></div></div></div></div></div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; transform: translateZ(0px); right: 15px; top: 12px; z-index: 10000; cursor: pointer;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div>
+
+<input id="select_location" width="130" name="selectLocation" class="btn selectLocation btn-primary" type="submit" value="This is my location">
+
+
+
+--- alt
+
+	I can't find my location
 	<a name="locationNotFound" class="btn event-trigger new-location btn-small btn-primary-secondary">I can't find my location</a>
 
 
+	Enter Your Retailer Information
+
+	Retailer, required
+	<input id="retailerName" name="retailerBean.name" type="text" value="" size="40" maxlength="50" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+
+	Street 1, required
+	<input id="locationBean.address.address1" name="locationBean.address.address1" class="address-field street-1 ui-autocomplete-input" type="text" value="" size="40" maxlength="100" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+
+	Street 2
+	<input id="locationBean.address.address2" name="locationBean.address.address2" class="address-field street-2" type="text" value="" size="40" maxlength="100">
+
+	City, required
+	<input id="locationBean.address.city" name="locationBean.address.city" class="address-field city" type="text" value="" size="40" maxlength="40">
+
+	State, required
+	<input type="text" name="locationBean.address.stateName" value="" class="address-field state-name ui-autocomplete-input" size="40" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+
+	Postal Code, required
+	<input id="locationBean.address.postalCode" name="locationBean.address.postalCode" class="address-field postal-code" type="text" value="" size="10" maxlength="10">
+
+	Country, required
+	<input type="text" name="locationBean.address.countryName" value="United States" class="address-field country-name ui-autocomplete-input" size="40" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+
+	Contact Name, required
+	<input id="contactName" name="locationBean.contactName" class="location-field" type="text" value="" size="40" maxlength="50">
+
+	Phone, required
+	<input id="phone" name="locationBean.phone" class="location-field" type="text" value="" size="20" maxlength="30">
+
+	Fax
+	<input id="fax" name="locationBean.fax" class="location-field" type="text" value="" size="20" maxlength="30">
+
+	Next
+	<a id="next-btn" name="createRetailLocation" class="btn event-trigger btn-primary">Next</a>
+
+	Back
+	<a id="back-btn" name="findRetailLocation" class="btn event-trigger btn-primary">Back</a>
 
 http://www.3point5.com/action/registration
 
